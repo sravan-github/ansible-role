@@ -8,4 +8,4 @@
 - name: Install
   import_tasks: tomcat_install.yml
   tags:
-    - install
+    - tomcatinstall
