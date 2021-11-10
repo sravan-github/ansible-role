@@ -1,4 +1,4 @@
 - name: download tomcat server packages
   get_url:
-    url: {{ tomcat_url }}
+    url: "{{ tomcat_url }}"
     dest: /opt
