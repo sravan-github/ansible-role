@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  
+  vars_files:
+    - home/sravan/install/vars/main.yml
+  roles:
+    - { role: install }
