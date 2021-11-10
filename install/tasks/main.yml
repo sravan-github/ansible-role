@@ -4,3 +4,8 @@
   import_tasks: install.yml
   tags:
     - install
+    
+- name: Install
+  import_tasks: tomcat_install.yml
+  tags:
+    - install
