@@ -1,4 +1,5 @@
 ---
 packages_install:
  - wget
- - apache2
+ - git
+ - openjdk-11-jdk
