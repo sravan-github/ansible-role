@@ -5,3 +5,4 @@ packages_install:
  - openjdk-11-jdk
  
 tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz
+tomcat_tar: apache-tomcat-9.0.54.tar.gz
