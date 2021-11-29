@@ -1,5 +1,5 @@
 ---
-- name: install package
+- name: install Java
   apt:
     name: "{{ item }}"
     state: latest
