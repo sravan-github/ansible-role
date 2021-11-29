@@ -5,7 +5,7 @@
     
  - name: extract tomcat packages
     unarchive:
-      src: /opt/apache-tomcat-9.0.54.tar.gz
+      src: /opt/"{{ tomcat_tar }}"
       dest: /opt
       remote_src: yes
 
