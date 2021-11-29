@@ -3,11 +3,11 @@
     url: "{{ tomcat_url }}"
     dest: /opt
     
- - name: extract tomcat packages
-    unarchive:
-      src: /opt/"{{ tomcat_tar }}"
-      dest: /opt
-      remote_src: yes
+- name: extract tomcat packages
+  unarchive:
+    src: /opt/"{{ tomcat_tar }}"
+    dest: /opt
+    remote_src: yes
 
-  - name: start tomcat services
-    shell: nohup /opt/apache-tomcat-9.0.54/bin/startup.sh
+- name: start tomcat services
+  shell: nohup /opt/apache-tomcat-9.0.54/bin/startup.sh
