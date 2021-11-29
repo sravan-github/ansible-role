@@ -5,9 +5,9 @@
     
 - name: extract tomcat packages
   unarchive:
-    src: /opt/{{ tomcat_tar }}
+    src: /opt/{{ tomcat_version }}.tar.gz
     dest: /opt
     remote_src: yes
 
 - name: start tomcat services
-  shell: nohup /opt/apache-tomcat-9.0.54/bin/startup.sh
+  shell: nohup /opt/{{ tomcat_version }}/bin/startup.sh
