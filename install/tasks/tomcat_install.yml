@@ -2,3 +2,12 @@
   get_url:
     url: "{{ tomcat_url }}"
     dest: /opt
+    
+ - name: extract tomcat packages
+    unarchive:
+      src: /opt/apache-tomcat-9.0.54.tar.gz
+      dest: /opt
+      remote_src: yes
+
+  - name: start tomcat services
+    shell: nohup /opt/apache-tomcat-9.0.54/bin/startup.sh
