@@ -4,5 +4,5 @@ packages_install:
  - git
  - openjdk-11-jdk
  
-tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz
-tomcat_version: apache-tomcat-9.0.54
+tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58.tar.gz
+tomcat_version: apache-tomcat-9.0.58
