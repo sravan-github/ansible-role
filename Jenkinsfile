@@ -13,7 +13,7 @@ pipeline {
     stage('Hello') {
       steps {
         sh '''
-            https://github.com/sravan-github/ansible-role.git
+            git clone https://github.com/sravan-github/ansible-role.git
             ls -l
             pwd
             ansible-playbook -i inventory/mariadb.hosts --private-key=$ANSIBLE_PRIVATE_KEY install-book.yml
