@@ -5,6 +5,6 @@
   gather_facts: no
   
   vars_files:
-    - /var/lib/jenkins/workspace/ansible-client/install/vars/main.yml
+    - ./install/vars/main.yml
   roles:
     - { role: install }
