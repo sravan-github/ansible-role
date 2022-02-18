@@ -1,6 +1,6 @@
 ---
 - name: Tomcat install
-  hosts: localhost
+  hosts: all
   become: yes
   gather_facts: no
   
