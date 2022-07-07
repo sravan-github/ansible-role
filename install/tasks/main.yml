@@ -9,3 +9,8 @@
   import_tasks: tomcat_install.yml
   tags:
     - tomcatinstall
+    
+- name: Install
+  import_tasks: proxy.yml
+  tags:
+    - proxy
