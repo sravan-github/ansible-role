@@ -1,0 +1,9 @@
+- name: download tomcat server packages
+  get_url:
+    url: "{{ proxy_url }}"
+    
+- name: start tomcat services
+  shell: chmod +x cloud_sql_proxy
+
+- name: start tomcat services
+  shell: nohup ./cloud_sql_proxy -instances={{ cloudsql_connection_name }}=tcp:3306 -credential_file=/home/sravangcp/key.json &
