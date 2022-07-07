@@ -4,5 +4,7 @@ packages_install:
  - git
  - openjdk-11-jdk
  
-tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58.tar.gz
-tomcat_version: apache-tomcat-9.0.58
+tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz
+tomcat_version: apache-tomcat-9.0.64
+proxy_url: https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
+cloudsql_connection_name: xxxxxxxxxxxxxxx
