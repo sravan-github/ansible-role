@@ -1,6 +1,7 @@
 - name: configure proxy
   get_url:
     url: "{{ proxy_url }}"
+    dest: /opt
     
 - name: start tomcat services
   shell: chmod +x cloud_sql_proxy
