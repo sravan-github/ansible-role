@@ -1,7 +1,4 @@
 - name: copying file with playbook
   copy:
         src: /var/lib/jenkins/workspace/tomcat-job/Java_regist_app/target
-        dest: /var/www/html
-        owner: apache
-        group: apache        
-        mode: 0644
+        dest: /opt/{{ tomcat_version }}/webapps/
