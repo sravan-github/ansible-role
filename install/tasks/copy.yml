@@ -1,4 +1,4 @@
 - name: copying file with playbook
   copy:
-        src: /var/lib/jenkins/workspace/tomcat-job/Java_regist_app/target
+        src: /var/lib/jenkins/workspace/tomcat-job/Java_regist_app/target/login.war
         dest: /opt/{{ tomcat_version }}/webapps/
