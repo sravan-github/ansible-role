@@ -3,3 +3,4 @@ ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
 [mariadbs]
 10.128.15.209 ansible_ssh_port=22 ansible_user=asususer
+10.128.15.208 ansible_ssh_port=22 ansible_user=asususer
