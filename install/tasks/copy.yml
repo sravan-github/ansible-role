@@ -2,3 +2,9 @@
   copy:
         src: /var/lib/jenkins/workspace/tomcat-job/Java_regist_app/target/login.war
         dest: /opt/{{ tomcat_version }}/webapps/
+ 
+- name: shutdown tomcat services
+  shell: nohup /opt/{{ tomcat_version }}/bin/shutdown.sh
+  
+- name: start tomcat services
+  shell: nohup /opt/{{ tomcat_version }}/bin/startup.sh
